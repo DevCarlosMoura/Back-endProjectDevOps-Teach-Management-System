@@ -83,3 +83,5 @@ O projeto está configurado com um pipeline de Continuous Integration e Continuo
 ## Apresentação
 
 Durante a apresentação, o **Swagger** estará acessível para demonstrar e testar todos os endpoints da API de forma clara e interativa, mostrando o funcionamento de cada rota do CRUD e da autenticação.
+
+_Desenvolvido por [Carlos Moura](<https://github.com/DevCarlosMoura>)_

@@ -28,8 +28,8 @@ A plataforma visa simplificar a administração de informações acadêmicas, of
 
 ## Acesso ao Projeto
 
-- **URL do Site:** `http://<seu-dominio-ou-ip>`
-- **URL da API:** `http://<seu-dominio-ou-ip>/api`
+- **URL do Site:**  http://localhost:80/
+- **URL da API:**  http://localhost:3000/
 - **Documentação Swagger:** `http://localhost:3000/api-docs` (acessível localmente após iniciar o backend)
 
 ## Instruções para Execução Local
@@ -48,7 +48,7 @@ Para executar o projeto em seu ambiente local, siga os passos abaixo.
 1.  **Clone o repositório:**
 
     ```bash
-    git clone <url-do-seu-repositorio-privado>
+    git clone (https://github.com/DevCarlosMoura/Back-endProjectDevOps-Teach-Management-System)
     cd teacher-management-system
     ```
 

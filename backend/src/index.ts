@@ -7,8 +7,7 @@ import { AppDataSource } from './config/database';
 import { swaggerSpec } from './config/swagger';
 import authRoutes from './routes/auth.routes';
 import teacherRoutes from './routes/teacher.routes';
-import subjectRoutes from './routes/subject.routes';
-import scheduleRoutes from './routes/schedule.routes';
+
 
 dotenv.config();
 
@@ -18,21 +17,14 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Swagger Documentation
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-// Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/teachers', teacherRoutes);
 app.use('/api/subjects', subjectRoutes);
 app.use('/api/schedules', scheduleRoutes);
 
-// Health check
-app.get('/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Teacher Management System API is running' });
-});
-
-// Initialize database and start server
 AppDataSource.initialize()
   .then(() => {
     console.log('Database connected successfully');

@@ -2,8 +2,6 @@ import { DataSource } from 'typeorm';
 import dotenv from 'dotenv';
 import { User } from '../entities/User';
 import { Teacher } from '../entities/Teacher';
-import { Subject } from '../entities/Subject';
-import { Schedule } from '../entities/Schedule';
 
 dotenv.config();
 
@@ -14,9 +12,9 @@ export const AppDataSource = new DataSource({
   username: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || 'postgres',
   database: process.env.DB_NAME || 'teacher_management',
-  synchronize: true, // Em produção, use migrations
+  synchronize: true,
   logging: false,
-  entities: [User, Teacher, Subject, Schedule],
+  entities: [User, Teacher],
   migrations: [],
   subscribers: [],
 });

@@ -51,19 +51,6 @@ teacher-management-system/
    - PUT /api/teachers/:id - Atualizar professor
    - DELETE /api/teachers/:id - Deletar professor
 
-3. **Disciplinas**
-   - GET /api/subjects - Listar todas as disciplinas
-   - GET /api/subjects/:id - Buscar disciplina por ID
-   - POST /api/subjects - Criar nova disciplina
-   - PUT /api/subjects/:id - Atualizar disciplina
-   - DELETE /api/subjects/:id - Deletar disciplina
-
-4. **Horários**
-   - GET /api/schedules - Listar todos os horários
-   - GET /api/schedules/:id - Buscar horário por ID
-   - POST /api/schedules - Criar novo horário
-   - PUT /api/schedules/:id - Atualizar horário
-   - DELETE /api/schedules/:id - Deletar horário
 
 ### Frontend (React)
 
@@ -104,9 +91,3 @@ Acesse `http://localhost:3000/api-docs` para visualizar e testar a API interativ
    - Backend: http://localhost:3000
    - Swagger: http://localhost:3000/api-docs
 
-## CI/CD
-
-O projeto está configurado com GitHub Actions para:
-- Build e teste automático do código
-- Build e push das imagens Docker
-- Deploy automático (configurável)

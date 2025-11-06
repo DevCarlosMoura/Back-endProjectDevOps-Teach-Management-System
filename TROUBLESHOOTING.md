@@ -22,7 +22,7 @@
 
 **Solução:**
 ```bash
-# Parar containers em execução
+
 docker-compose down
 
 # Verificar portas em uso (Linux/Mac)
@@ -35,7 +35,7 @@ netstat -ano | findstr :3000
 netstat -ano | findstr :5432
 netstat -ano | findstr :80
 
-# Alterar portas no docker-compose.yml se necessário
+
 ```
 
 ### 4. Banco de Dados Não Conecta

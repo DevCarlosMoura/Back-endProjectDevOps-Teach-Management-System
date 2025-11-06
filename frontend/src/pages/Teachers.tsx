@@ -182,7 +182,7 @@ export default function Teachers() {
 
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <thead>
-          <tr style={{ backgroundColor: '#f0f0f0' }}>
+          <tr style={{ backgroundColor: '#ff1d1dff' }}>
             <th style={{ padding: '10px', textAlign: 'left', border: '1px solid #ddd' }}>Nome</th>
             <th style={{ padding: '10px', textAlign: 'left', border: '1px solid #ddd' }}>Email</th>
             <th style={{ padding: '10px', textAlign: 'left', border: '1px solid #ddd' }}>Telefone</th>

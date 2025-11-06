@@ -10,8 +10,7 @@ A plataforma visa simplificar a administração de informações acadêmicas, of
 
 - **Autenticação de Usuários:** Sistema seguro de registro e login com tokens JWT.
 - **Gerenciamento de Professores:** CRUD (Criar, Ler, Atualizar, Deletar) completo para o cadastro de professores.
-- **Gerenciamento de Disciplinas:** CRUD para o cadastro de disciplinas.
-- **Gerenciamento de Horários:** Funcionalidade para vincular professores a disciplinas em horários específicos.
+
 
 ## Tecnologias Utilizadas
 
@@ -24,7 +23,6 @@ A plataforma visa simplificar a administração de informações acadêmicas, of
 | **Autenticação** | JWT (JSON Web Tokens) | Padrão para criação de tokens de acesso que validam as requisições. |
 | **Documentação da API** | Swagger | Ferramenta para documentar e testar os endpoints da API de forma interativa. |
 | **Containerização** | Docker, Docker Compose | Criação de ambientes isolados para a aplicação e o banco de dados, facilitando a execução. |
-| **CI/CD** | GitHub Actions | Automação do processo de build, teste e deploy da aplicação. |
 
 ## Acesso ao Projeto
 
@@ -71,14 +69,6 @@ Para executar o projeto em seu ambiente local, siga os passos abaixo.
     - O **backend** estará rodando na porta `3000`.
     - A **documentação da API (Swagger)** pode ser acessada em `http://localhost:3000/api-docs`.
 
-## Pipeline de CI/CD
-
-O projeto está configurado com um pipeline de Continuous Integration e Continuous Deployment (CI/CD) utilizando **GitHub Actions**.
-
-- **On Push/Pull Request (main):** A cada `push` ou `pull request` para a branch `main`, o workflow `build-and-test` é acionado para instalar as dependências e construir os projetos de backend e frontend, garantindo a integridade do código.
-- **On Merge (main):** Após o merge para a `main`, o job `deploy` é executado. Ele faz o login no Docker Hub, constrói as imagens Docker do backend e do frontend e as envia para o registro. Para que a automação funcione, é necessário configurar os seguintes secrets no repositório do GitHub:
-    - `DOCKER_USERNAME`: Seu nome de usuário do Docker Hub.
-    - `DOCKER_PASSWORD`: Sua senha ou token de acesso do Docker Hub.
 
 ## Apresentação
 

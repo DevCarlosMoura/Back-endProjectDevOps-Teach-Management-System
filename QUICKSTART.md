@@ -116,42 +116,4 @@ Consulte o arquivo `TROUBLESHOOTING.md` para soluções de problemas comuns.
 }
 ```
 
-### Disciplina (Subject)
 
-```json
-{
-  "name": "Cálculo I",
-  "code": "MAT101",
-  "description": "Introdução ao Cálculo Diferencial",
-  "workload": 80
-}
-```
-
-### Horário (Schedule)
-
-```json
-{
-  "teacherId": "uuid-do-professor",
-  "subjectId": "uuid-da-disciplina",
-  "dayOfWeek": "Segunda-feira",
-  "startTime": "08:00",
-  "endTime": "10:00",
-  "classroom": "Sala 101"
-}
-```
-
-## Próximos Passos
-
-- Explore os endpoints de **Disciplinas** (`/api/subjects`)
-- Explore os endpoints de **Horários** (`/api/schedules`)
-- Vincule professores a disciplinas através dos horários
-- Personalize o frontend conforme suas necessidades
-
-## Suporte
-
-Para mais informações, consulte:
-
-- `README.md` - Documentação completa
-- `PROJECT_SUMMARY.md` - Resumo técnico do projeto
-- `DEPLOY.md` - Guia de deploy em produção
-- `TROUBLESHOOTING.md` - Solução de problemas

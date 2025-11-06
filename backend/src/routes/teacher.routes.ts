@@ -38,7 +38,6 @@ const teacherController = new TeacherController();
  *         description: Erro ao criar o professor
  *       500:
  *         description: Erro interno do servidor
- *
  */
 router.post('/', authMiddleware, teacherController.create);
 
@@ -56,8 +55,8 @@ router.post('/', authMiddleware, teacherController.create);
  *         description: Lista de professores
  *       401:
  *         description: Erro ao criar o professor 
- *     500:     
- *    description: Erro interno do servidor
+ *       500:     
+ *         description: Erro interno do servidor
  */
 router.get('/', authMiddleware, teacherController.getAll);
 
@@ -79,10 +78,10 @@ router.get('/', authMiddleware, teacherController.getAll);
  *     responses:
  *       200:
  *         description: Professor encontrado
- *      404:    
- *    description: Professor não encontrado
- *   500:
- *      description: Erro interno do servidor
+ *       404:    
+ *         description: Professor não encontrado
+ *       500:
+ *         description: Erro interno do servidor
  */
 router.get('/:id', authMiddleware, teacherController.getById);
 
@@ -123,10 +122,10 @@ router.get('/:id', authMiddleware, teacherController.getById);
  *     responses:
  *       200:
  *         description: Professor atualizado
- *     404:
- *   description: Professor não encontrado
- *  500:    
- *                 description: Erro interno do servidor
+ *       404:
+ *         description: Professor não encontrado
+ *       500:
+ *         description: Erro interno do servidor
  */
 router.put('/:id', authMiddleware, teacherController.update);
 
@@ -148,12 +147,10 @@ router.put('/:id', authMiddleware, teacherController.update);
  *     responses:
  *       204:
  *         description: Professor deletado
- *  
- *    404:
- *   description: Professor não encontrado
- *  
- * 500: 
- *   description: Erro interno do servidor
+ *       404:
+ *         description: Professor não encontrado
+ *       500:
+ *         description: Erro interno do servidor
  */
 router.delete('/:id', authMiddleware, teacherController.delete);
 
